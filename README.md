@@ -71,3 +71,13 @@ useScreenCapture({
           // catch error
       })
 ```
+
+Additionally, you can check if browser supports the Screen Capture API by using provided flag `isScreenCaptureSupported`
+
+```javascript
+import { isScreenCaptureSupported } from 'nshot'
+
+if (isScreenCaptureSupported) {
+    // take screenshot
+}
+```
