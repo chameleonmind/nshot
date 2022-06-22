@@ -2,13 +2,13 @@
   "name": "nshot",
   "version": "1.0.0",
   "description": "Allow users to make screenshots of their screen using a native Screen Capture API",
-  "private": true,
   "packageManager": "pnpm@7.2.1",
   "type": "module",
   "scripts": {
     "dev": "tsup --dts --watch",
     "build": "tsup --dts",
-    "test": "vitest"
+    "test": "vitest",
+    "publish": "npm publish"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",
