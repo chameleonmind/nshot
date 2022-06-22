@@ -1,6 +1,6 @@
 {
   "name": "nshot",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Allow users to make screenshots of their screen using a native Screen Capture API",
   "private": true,
   "packageManager": "pnpm@7.2.1",
@@ -35,7 +35,7 @@
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.global.js",
+      "require": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }
   },

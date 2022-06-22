@@ -1,10 +1,8 @@
 export interface ScreenshotOptions {
-  cursorVisible?: boolean
-  // width?: number
-  // height?: number
+  // cursorVisible?: boolean
   preferCurrentTab?: boolean
-  size?: 'viewport' // | 'full-page'
+  // size?: 'viewport' | 'full-page'
   quality?: number // 0-1
-  type?: 'png' | 'jpeg' | 'webp',
+  format?: 'png' | 'jpeg' | 'webp',
   timer?: number
 }

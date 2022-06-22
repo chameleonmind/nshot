@@ -6,13 +6,11 @@ import { getImageType, getValueWithinRange, timer } from './utils'
 
 const defaultOptions: ScreenshotOptions = {
   preferCurrentTab: true,
-  cursorVisible: true,
-  size: 'viewport',
   quality: 0.75,
-  type: 'png'
+  format: 'png'
 }
 
-export const useScreenCapture = async (options: ScreenshotOptions): Promise<string | null> => {
+export const useScreenCapture = async (options: ScreenshotOptions): Promise<string> => {
   const mergedOptions = {
     ...defaultOptions,
     ...options
@@ -26,6 +24,7 @@ export const useScreenCapture = async (options: ScreenshotOptions): Promise<stri
       }
     })
       .then(async (res: MediaStream) => {
+        // display countdown overlay if there is timer defined
         if (mergedOptions.timer) {
           await timer(mergedOptions.timer)
         }
@@ -37,7 +36,7 @@ export const useScreenCapture = async (options: ScreenshotOptions): Promise<stri
         const canvas = await renderFrameOnCanvas(video)
 
         // convert canvas content to base64 encoded image
-        const imageType = getImageType(mergedOptions.type || 'png')
+        const imageType = getImageType(mergedOptions.format || 'png')
         const imageQuality = getValueWithinRange(mergedOptions.quality || 1, 0.01, 1)
 
         // get screenshot in base64 encoding
