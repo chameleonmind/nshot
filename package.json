@@ -1,0 +1,65 @@
+{
+  "name": "nshot",
+  "version": "0.0.1",
+  "description": "Allow users to make screenshots of their screen using a native Screen Capture API",
+  "private": true,
+  "packageManager": "pnpm@7.2.1",
+  "type": "module",
+  "scripts": {
+    "dev": "tsup --dts --watch",
+    "build": "tsup --dts",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "pnpm": "^7.3.0",
+    "rimraf": "^3.0.2",
+    "tsup": "^6.1.2",
+    "typescript": "^4.7.4",
+    "vitest": "^0.15.1"
+  },
+  "sideEffects": false,
+  "files": [
+    "/dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.global.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chameleonmind/nshot.git"
+  },
+  "keywords": [
+    "screenshot",
+    "screen",
+    "capture"
+  ],
+  "author": "Milos Milosevic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chameleonmind/nshot/issues"
+  },
+  "homepage": "https://github.com/chameleonmind/nshot#readme"
+}
