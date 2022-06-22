@@ -7,5 +7,5 @@ export default defineConfig({
   dts: true,
   treeshake: true,
   minify: true,
-  format: ['esm', 'iife']
+  format: ['esm', 'iife', 'cjs']
 })
