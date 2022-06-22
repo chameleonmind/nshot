@@ -7,5 +7,6 @@ export default defineConfig({
   dts: true,
   treeshake: true,
   minify: true,
-  format: ['esm', 'iife', 'cjs']
+  format: ['esm', 'iife', 'cjs'],
+  legacyOutput: true
 })
