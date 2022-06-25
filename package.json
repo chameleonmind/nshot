@@ -19,6 +19,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
+    "jsdom": "^20.0.0",
     "pnpm": "^7.3.0",
     "rimraf": "^3.0.2",
     "tsup": "^6.1.2",
