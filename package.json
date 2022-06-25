@@ -1,6 +1,6 @@
 {
   "name": "nshot",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Allow users to make screenshots of their screen using a native Screen Capture API",
   "packageManager": "pnpm@7.2.1",
   "type": "module",
