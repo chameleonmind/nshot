@@ -1,7 +1,3 @@
-// function drawOnCanvas(ctx, video) {
-//   ctx?.drawImage(video, 0, 0)
-// }
-
 export const renderFrameOnCanvas = (video: HTMLVideoElement): Promise<HTMLCanvasElement> => {
   return new Promise(resolve => {
     // @ts-ignore
@@ -14,12 +10,9 @@ export const renderFrameOnCanvas = (video: HTMLVideoElement): Promise<HTMLCanvas
     canvas.setAttribute('style', 'position: fixed; right: 0; top: 0; width: 100vw; height: 100vh;')
     const ctx = canvas.getContext('2d')
 
-    // document.body.appendChild(canvas)
-
     video.addEventListener('play', function () {
       ctx?.drawImage(video, 0, 0)
       resolve(canvas)
     })
-    // return canvas
   })
 }

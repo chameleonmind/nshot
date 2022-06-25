@@ -50,7 +50,7 @@ useScreenCapture(options)
 {
     preferCurrentTab: boolean // true/false, whether the Screen Capture API should offer the current tab first
     quality: number // a number between 0.01 and 1, determines the image quality, works only on jpeg format
-    type: string // format of the screenshot, supported types: png, jpeg and webp
+    format: string // format of the screenshot, supported formats: png, jpeg and webp
     timer: number // number of seconds to wait before taking a screenshot. An overlay will be shown on top with countdown
 }
 ```
