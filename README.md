@@ -2,6 +2,8 @@
 
 > Allow users to make screenshots of their screen using a native Screen Capture API
 
+## [See simple demo](https://nshot-demo.stackblitz.io/)
+
 ## Features
 
 - Initiate screen capture from web apps easily, 
